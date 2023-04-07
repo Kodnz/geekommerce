@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeKommerce home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+    <div id="header">
+        <div id="categorias">
+          <!--Label e Input menu categ lateral-->
+            <input type="checkbox" id="chec">
+            <label for="chec" class="categlabel">
+                <img id="card" src="imgs/icons8-cardápio-30.png">
+            </label>
+            <nav class="nav">
+              <!--Categorias do Menu Lateral-->
+                <p class="navcateg">Categorias</p>
+                <ul>
+                    <li><a href="">
+                        <span class="icon"> <img src="imgs/icons8-barato-2-30.png" class="itensicons" alt=""></span> 
+                        <span class="itens">Moedas Geek</span></a></li>
+                    <li><a href="">
+                        <span class="icon"> <img src="imgs/icons8-joystick-48.png" class="itensicons" alt=""></span> 
+                        <span class="itens">Aulas de Jogos</span></a></li></a></li>
+                    <li><a href="">
+                        <span class="icon"> <img src="imgs/icons8-pipoca-30.png" class="itensicons" alt=""></span> 
+                        <span class="itens">Aluguel de Filmes</span></a></li></a></li>
+                    <li><a href="">
+                        <span class="icon"> <img src="imgs/icons8-play-dentro-de-um-circulo-30.png" class="itensicons" alt=""></span> 
+                        <span class="itens">Compra de Filmes</span></a></li></a></li>
+                    <li><a href="">
+                        <span class="icon"> <img src="imgs/icons8-mao-com-caneta-30.png" class="itensicons" alt=""></span> 
+                        <span class="itens">Assinaturas</span></a></li></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Nome da Página-->
+        <div id="nome">
+            <h1 id="logo">GEEKommerce</h1>
+        </div>
+        <!--Carrinho de Itens-->
+        <div id="carrinho">
+          <p id="carrinhoitens">Itens</p>
+          <img src="imgs/icons8-carrinho-de-compras-30.png" alt="cart">
+        </div>
+        <!--Login/Entrar-->
+        <div id="login">
+          <p id="entrar">Entrar</p>
+        </div>
+        <!--Registrar-se-->
+        <div id="registro">
+          <p id="registrar">Registrar</p>
+        </div>
+    </div>
+    <!--Radio Buttons Slider-->
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--Imagens do Slider-->
+        <div class="slide first">
+          <img src="imgs/avatar.webp" alt="i1">
+        </div>
+        <div class="slide">
+          <img src="imgs/jujutsu.jpg" alt="i2">
+        </div>
+        <div class="slide">
+          <img src="imgs/overwatch-2.jpg" alt="i3">
+        </div>
+        <div class="slide">
+          <img src="imgs/Valorantwp.jpg" alt="i4">
+        </div>
+        <!--Navigation Auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <!--Manual Navigation-->
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+    <!--Destaques-->
+    <h2 id="destaques">Destaques</h2>
+    <!--Produtos e Itens da Loja-->
+    <h3 id="catalogo">Produtos</h3>
+    <div id="produtos">
+      <!--Item 1-->
+      <div class="prodallign">
+      <img src="imgs/pfpavatar.jpg" alt="pfp1">
+      <h4 class="prodname"> Aluguel de Filmes</h4>
+      <p class="description">Escolha entre um catálogo enorme de filmes para "pegar emprestado" de nós por um tempinho!
+        A duração sempre pode ser estendida ou caso goste do filme pode comprá-lo na outra opção!
+      </p>
+      </div>
+      <!--Item 2-->
+      <div class="prodallign">
+      <img src="imgs/pfpval.jpg" alt="pfp2">
+      <h4 class="prodname"> Aulas de Jogos</h4>
+      <p class="description">Escolha entre aulas gravadas ou coachs ao vivo entre vários jogos!
+        Estamos dispostos a te ajudar a subir no seu jogo favorito!
+        Acompanhamento reconhecido pelo MEC*
+      </p>
+      </div>
+      <!--Item 3-->
+      <div class="prodallign">
+      <img src="imgs/pfprainbow.jpg" alt="pfp3">
+      <h4 class="prodname"> Compra de Filmes</h4>
+      <p class="description">Uma variedade incrível de filmes, e qualquer um deles pode ser seu para sempre!
+        Após a compra o filme ficará disponível para assistir a qualquer momento em sua conta através do site!
+      </p>
+      </div>
+      <!--Item 4-->
+      <div class="prodallign">
+      <img src="imgs/pfpover.jpg" alt="pfp4">
+      <h4 class="prodname"> Assinaturas</h4>
+      <p class="description">Se junte ao nosso plano e ganhe benefícios EXCLUSIVOS!
+        Entre eles, uma disponibilidade rotativa de filmes e séries, acesso livre a lançamentos de animes, e aulas gravadas exclusivas de jogos!
+      </p>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

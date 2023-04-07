@@ -1,0 +1,355 @@
+/*Links*/
+a{
+    text-decoration: none;
+    color: #000000;
+    border: 4px solid #000000;
+    border-radius: 5%;
+    background-color: #D9D9D9;
+    display: block;
+    padding: 20px 20px;
+}
+
+a:hover{
+    background-color: #9F9F9F;
+    color: #000000;
+}
+/*Label do Menu Lateral*/
+.categlabel{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.categlabel:hover{
+    cursor: pointer;
+}
+/*Body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #D9D9D9;
+    overflow: hidden;
+}
+/*Lista e Itens da Lista*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+li{
+    padding: 25px 10px;
+    background-color: #282828;
+}
+/*Icones e Imagens da Lista*/
+.icon{
+    width: 20%;
+}
+
+.itensicons{
+    height: 35px;
+    width: 35px;
+}
+/*Texto das Listas*/
+.itens{
+    width: 80%;
+}
+/*Imagem Label*/
+#card{
+    width: 50px;
+    padding-top: 0px;
+}
+/*Input/Botão da Label e Box*/
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(400px);
+}
+
+.nav{
+    color: #ffffff;
+    text-align: center;
+    background-color: #282828;
+    width: 350px;
+    height: 100%;
+    left: -400px;
+    position: absolute;
+    transition: all .5s;
+    border: 3px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-top: 0px solid #000000;
+}
+/*Cabeçote*/
+#header{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: #282828;
+    border: 1px solid #000000;
+}
+/*Nome da Página*/
+#logo{
+    position: absolute;
+    width: 80%;
+    height: 70px;
+    text-align: center;
+    top: -45px;
+    font-family: 'Khand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 84px;
+    color: #ffffff;
+}
+/*Div total Menu Lateral*/
+#categorias{
+    box-sizing: border-box;
+    width: 92px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: #282828;
+    border: 3px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-top: 0px solid #000000;
+}
+/*Texto Título Categorias*/
+.navcateg{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+/*Little Cart e togethers*/
+#carrinho{
+    box-sizing: border-box;
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    right: 150px;
+    top: 0px;
+    background: #282828;
+    border: 3px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-top: 0px solid #000000;
+}
+
+#carrinho:hover{
+    cursor: pointer;
+}
+
+#carrinhoitens{
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-left: 65px;
+    color: #ffffff;
+}
+
+#carrinho img{
+    padding-top: 10px;
+    padding-left: 65px;
+}
+/*Entrando e togethers*/
+#login{
+    box-sizing: border-box;
+    position: absolute;
+    width: 153px;
+    height: 35px;
+    right: 0px;
+    top: 0px;
+    background: #282828;
+    border: 3px solid #000000;
+    border-top: 0px solid #000000;
+}
+
+#login:hover{
+    cursor: pointer;
+}
+
+#entrar{
+    margin-top: 7px;
+    padding-top: -20px;
+    padding-left: 50px;
+    color: #ffffff;
+}
+/*Register e afins*/
+#registro{
+    box-sizing: border-box;
+    position: absolute;
+    width: 153px;
+    height: 35px;
+    right: 0px;
+    bottom: 0px;
+    background: #282828;
+    border: 3px solid #000000;
+    border-top: 0px solid #000000;
+}
+
+#registro:hover{
+    cursor: pointer;
+}
+
+#registrar{
+    margin-top: 7px;
+    padding-top: -20px;
+    padding-left: 40px;
+    color: #ffffff;
+}
+/*Carrossel e afins*/
+.slider{
+    margin: 0 auto;
+    padding-top: 85px;
+    padding-left: 350px;
+    width: 1600px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 250px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+/*Imagens do Carrosel*/
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+/*Botões do Carrossel*/
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+/*Comandos dos Botões do Carrossel*/
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+/*Div para automatizar o Carrosel (linkado ao JS)*/
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffffff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ffffff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffffff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ffffff;
+}
+/*Highlights*/
+#destaques{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*Div Produtos*/
+#catalogo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+/*Div Produtos2*/
+#produtos{
+    padding: 5vh 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Imagens Produtos*/
+#produtos img{
+    border: 2px solid #282828;
+    border-radius: 8px;
+    width: 12vh;
+    height: 12vh;
+}
+/*Div para alinhar interno*/
+.prodallign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.prodallign:hover{
+    cursor: pointer;
+}
+/*Texto dos produtos*/
+.description{
+    margin-top: 0;
+    margin-left: 1vh;
+    border: 1px dashed #000000;
+    background-color: #282828;
+    color: #C9C9C9;
+}
